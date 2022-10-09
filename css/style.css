@@ -46,3 +46,13 @@ li a:hover:not(.active) {
     background-color: red;
     text-decoration: underline;
 }
+
+img {
+    width: 300px;
+    border: blue solid 5px;
+    margin: auto;
+    padding: 10px;
+}
+img:hover {
+    opacity: 0.3;
+}
