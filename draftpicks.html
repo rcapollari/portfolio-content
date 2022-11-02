@@ -1,8 +1,22 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
   <head>
     <link rel="stylesheet" href="css/html5reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-QVVCSHNQBN"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-QVVCSHNQBN");
+    </script>
     <title>Pistons</title>
   </head>
   <body>
@@ -11,9 +25,15 @@
       <nav>
         <ul>
           <li><a href="/portfolio-content">Home</a></li>
-          <li><a href="/portfolio-content/championships.html">Championships</a></li>
+          <li>
+            <a href="/portfolio-content/championships.html">Championships</a>
+          </li>
           <li><a href="/portfolio-content/legends.html">Pistons Legends</a></li>
-          <li><a class="active" href="/portfolio-content/draftpicks.html">Draft Picks</a></li>
+          <li>
+            <a class="active" href="/portfolio-content/draftpicks.html"
+              >Draft Picks</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
@@ -51,7 +71,10 @@
       </p>
       <img src="images/cade-draft.jpg" alt="Cade Cunningham with Adam Silver" />
       <img src="images/ivey-draft.jpg" alt="Jaden Ivey" />
-      <img src="images/drummond-draft.jpg" alt="Andre Drummond with David Stern" />
+      <img
+        src="images/drummond-draft.jpg"
+        alt="Andre Drummond with David Stern"
+      />
     </main>
     <footer></footer>
   </body>
