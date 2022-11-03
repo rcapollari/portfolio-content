@@ -55,6 +55,7 @@ li a:hover:not(.active) {
 img {
     width: 100%;
     max-height: 300px;
+    overflow:inherit;
     border: blue solid 5px;
     margin: auto;
     padding: 5px;
