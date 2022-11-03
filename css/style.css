@@ -1,3 +1,8 @@
+body {
+    font-family: "Space Mono", "sans-serif";
+    background-image: none;
+    display: grid;
+}
 .skip a {
     position: absolute;
     top: -40px;
@@ -48,11 +53,29 @@ li a:hover:not(.active) {
 }
 
 img {
-    width: 300px;
+    width: 100%;
+    max-height: 300px;
     border: blue solid 5px;
     margin: auto;
-    padding: 10px;
+    padding: 5px;
 }
 img:hover {
     opacity: 0.3;
+}
+footer {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+@media screen and (min-width: 800px){
+    img {
+        width: 400px;
+        height: 275px;
+        border: blue solid 5px;
+        margin: auto;
+        padding: 5px;
+    }
 }
