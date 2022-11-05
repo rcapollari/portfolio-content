@@ -1,12 +1,15 @@
 body {
     font-family: "Space Mono", "sans-serif";
     background-image: none;
-    display: grid;
 }
 h1 {
     font-size: 25px;
     font-weight: bold;
+    text-align: center;
     padding-bottom: 5px;
+}
+p {
+    padding: 0px 5px 10px 5px;
 }
 .skip a {
     position: absolute;
@@ -58,9 +61,8 @@ li a:hover:not(.active) {
 }
 
 img {
-    width: 100%;
+    width: 95%;
     max-height: 300px;
-    overflow:inherit;
     border: blue solid 5px;
     margin: auto;
     padding: 5px;
@@ -74,7 +76,8 @@ footer {
     font-weight: bold;
     text-align: center;
     padding: 20px;
-    grid-row: auto;
+    grid-column: 1 / -1;
+    grid-row: 7 / auto;
 }
 
 @media screen and (min-width: 800px){
