@@ -3,6 +3,11 @@ body {
     background-image: none;
     display: grid;
 }
+h1 {
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
 .skip a {
     position: absolute;
     top: -40px;
@@ -69,6 +74,7 @@ footer {
     font-weight: bold;
     text-align: center;
     padding: 20px;
+    grid-row: auto;
 }
 
 @media screen and (min-width: 800px){
