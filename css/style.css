@@ -1,7 +1,10 @@
 body {
     font-family: "Space Mono", "sans-serif";
     background-image: none;
+    display: grid;
+
 }
+  
 h1 {
     font-size: 25px;
     font-weight: bold;
@@ -71,16 +74,21 @@ img:hover {
     opacity: 0.3;
 }
 footer {
+    background-image: url('../images/teal-logo.jpg');
     background-color: black;
     color: white;
     font-weight: bold;
     text-align: center;
     padding: 20px;
-    grid-column: 1 / -1;
-    grid-row: 7 / auto;
 }
 
 @media screen and (min-width: 800px){
+    body {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    header, main, footer {
+        grid-column: 1 / span 3;
+    }
     img {
         width: 400px;
         height: 275px;
@@ -89,3 +97,13 @@ footer {
         padding: 5px;
     }
 }
+@media screen and (prefers-reduced-motion: reduce){
+    html{
+      scroll-behavior: auto; /* Removes scroll animation */
+    }
+  
+    .skip a{
+      -webkit-transition: none;
+      transition: none;
+    }
+  }
