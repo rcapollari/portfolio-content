@@ -13,6 +13,13 @@ h1 {
 p {
     padding: 0px 5px 10px 5px;
 }
+aside {
+    padding-bottom: 10px;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
 .skip a {
     position: absolute;
     top: -40px;
@@ -32,6 +39,7 @@ p {
 
 nav a {
     font-size: 25px;
+
 }
 
 ul {
@@ -66,7 +74,6 @@ img {
     width: 95%;
     max-height: 300px;
     border: blue solid 5px;
-    margin: auto;
     padding: 5px;
 }
 img:hover {
@@ -79,6 +86,7 @@ footer {
     font-weight: bold;
     text-align: center;
     padding: 20px;
+    margin-top: 10px;
 }
 
 @media screen and (min-width: 800px){
@@ -86,16 +94,22 @@ footer {
         display: grid;
         grid-template-columns: auto auto auto;
     }
-    header, main, footer {
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    header, main, footer, .flex-container {
         grid-column: 1 / span 3;
     }
     img {
         width: 400px;
         height: 275px;
         border: blue solid 5px;
-        margin: auto;
-        padding: 5px;
+        margin-top: 10px;
     }
+
 }
 @media screen and (prefers-reduced-motion: reduce){
     html{
