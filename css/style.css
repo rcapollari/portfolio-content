@@ -1,8 +1,7 @@
 body {
     font-family: "Space Mono", "sans-serif";
-    background-image: none;
     display: grid;
-
+    grid-template-columns: auto;
 }
   
 h1 {
@@ -84,7 +83,8 @@ footer {
 
 @media screen and (min-width: 800px){
     body {
-        grid-template-columns: 1fr 1fr 1fr;
+        display: grid;
+        grid-template-columns: auto auto auto;
     }
     header, main, footer {
         grid-column: 1 / span 3;
