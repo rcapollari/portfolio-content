@@ -16,7 +16,32 @@ p {
 aside {
     padding-bottom: 10px;
     background-color: lightgray;
+    text-align: center;
+    margin-top: 10px;
 }
+
+input, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(150, 149, 149);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+button {
+    background-color: #333;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(97, 95, 95);
+}
+
 .flex-container {
     display: flex;
     flex-direction: column;
