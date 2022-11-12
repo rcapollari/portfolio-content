@@ -27,7 +27,6 @@ aside {
     margin-bottom: 5px;
     animation-name: slide;
     animation-duration: 3s;
- 
 }
 @keyframes slide {
     from {
@@ -170,5 +169,8 @@ footer {
     .skip a{
       -webkit-transition: none;
       transition: none;
+    }
+    aside {
+        animation: none;
     }
   }
