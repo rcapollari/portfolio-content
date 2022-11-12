@@ -1,19 +1,28 @@
 <!DOCTYPE html>
+<html lang="en">
   <head>
     <link rel="stylesheet" href="css/html5reset.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QVVCSHNQBN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-QVVCSHNQBN"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-QVVCSHNQBN');
-</script>
+      gtag("config", "G-QVVCSHNQBN");
+    </script>
   </head>
   <body>
     <div class="skip"><a href="#main">Skip to Main Content</a></div>
@@ -21,30 +30,33 @@
       <nav>
         <ul>
           <li><a href="/portfolio-content">Home</a></li>
-          <li><a href="/portfolio-content/championships.html">Championships</a></li>
+          <li>
+            <a href="/portfolio-content/championships.html">Championships</a>
+          </li>
           <li><a href="/portfolio-content/legends.html">Legends</a></li>
           <li><a href="/portfolio-content/draftpicks.html">Draft Picks</a></li>
-          <li><a class="active" href="/portfolio-content/contact.html">Contact</a></li>
+          <li>
+            <a class="active" href="/portfolio-content/contact.html">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
     <main id="main">
       <h1>Contact</h1>
-      <form
-  action="https://formspree.io/f/xknepkbq"
-  method="POST"
->
-  <label>
-    Your email: 
-  </label>
-  <input type="email" name="email">
-  <label>
-    Your message:
-  </label>
-  <textarea name="message"></textarea>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
+      <form action="https://formspree.io/f/xknepkbq" method="POST">
+        <label>
+          Your email:
+          <input type="email" name="email" />
+        </label>
+
+        <label>
+          Your message:
+          <textarea name="message"></textarea>
+        </label>
+
+        <!-- your other form fields go here -->
+        <button type="submit">Send</button>
+      </form>
     </main>
     <footer>
       <p>Rio Capollari</p>
