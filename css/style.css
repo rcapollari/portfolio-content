@@ -142,8 +142,37 @@ footer {
     bottom: 0;
     left: 0;
 }
+@media screen and (min-width: 750px) {
+    body {
+        display: grid;
+        grid-template-columns: auto auto;
+        height: 100%;
+    }
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    header, main, footer, .flex-container {
+        grid-column: 1 / span 3;
+    }
+    header {
+        margin-top: 0;
+    }
+    aside {
+        float: right;
+        grid-column: 3;
+    }
+    img {
+        width: 350px;
+        height: 275px;
+        border: blue solid 5px;
+        margin-top: 10px;
+    }
+}
 
-@media screen and (min-width: 750px){
+@media screen and (min-width: 900px){
     body {
         display: grid;
         grid-template-columns: auto auto auto;
